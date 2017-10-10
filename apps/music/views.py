@@ -25,4 +25,4 @@ def favorite(request, album_id):
     else:
         selected_song.is_favorite = True
         selected_song.save()
-        return render(request, 'music/detail.html',{'album': album})    
+        return render(request, 'music/detail.html',{'album': album})
